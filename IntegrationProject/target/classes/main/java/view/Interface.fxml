@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.view.Controller">
+   <children>
+      <Separator layoutX="8.0" layoutY="36.0" prefHeight="8.0" prefWidth="582.0" />
+      <Label layoutX="27.0" layoutY="14.0" prefHeight="17.0" prefWidth="116.0" text="Fernanda Santos [..]">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Accordion layoutX="27.0" layoutY="78.0" prefHeight="284.0" prefWidth="548.0">
+        <panes>
+          <TitledPane fx:id="tpLine" animated="false" prefHeight="131.0" prefWidth="548.0" text="Linhas">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="62.0" layoutY="100.0" text="Selecione uma linha" textFill="#1e1e1e">
+                           <font>
+                              <Font name="Baskerville Old Face" size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="cbbline" editable="false" layoutX="187.0" layoutY="96.0" prefWidth="150.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane fx:id="tpModel" animated="false" text="Modelos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="234.0" prefWidth="546.0">
+                     <children>
+                        <TreeView fx:id="listaDeModelos" layoutX="139.0" layoutY="13.0" prefHeight="206.0" prefWidth="381.0" />
+                        <Label layoutX="21.0" layoutY="37.0" text="Lista de Modelos " textAlignment="CENTER">
+                           <font>
+                              <Font name="Bookshelf Symbol 7" size="13.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </children>
+</AnchorPane>
